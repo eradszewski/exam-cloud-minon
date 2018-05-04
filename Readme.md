@@ -56,9 +56,9 @@ now you can start
 **Windows:**<br />
 `install.bat`
 ### Option: 2. Without Git<br />
-This installation way is more complicated.<br />
-![Alt text](/vm-docker-compose-oracleGitLab.jpg?raw=true "vm-docker-bootstrap")
+This installation way is more expensive.<br />
 You can download all projects available in the Git manuel as zip over the Web-Frontend. </br>
+![Alt text](/vm-docker-compose-oracleGitLab.jpg?raw=true "vm-docker-bootstrap")
 
 **1.** Download and unzip the root project from this site.
 after the download is complete navigate in the project directory:<br />
@@ -66,6 +66,7 @@ after the download is complete navigate in the project directory:<br />
 **2.** Download and unzip the subprojects in the root project:
 </br>
 http://usdev016:81/vm-dev/vmx-oc-web-test
+</br>
 http://usdev016:81/vm-dev/vmx-oc-oracledb-test
 
 
