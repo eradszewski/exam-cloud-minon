@@ -28,6 +28,9 @@ There are two ways to install the project.
 
 
 ### Option 1. Git
+For this option you must Install the git bash for Winodws 7:
+https://gitforwindows.org/
+
 **1.** First, navigate with the commandline to the directory where the project should be installed.<br />
 Execute:<br />
 `git clone <url>`<br />
