@@ -25,7 +25,7 @@ needed Software:
  - Docker Compose
 
 
-Docker working with the guest-Os via a hypervisor so you need to enable **CPU visualization** in the BIOS settings </br> (see Docker Toolbox tutorial)</br>
+Docker working with the Guest-OS via a Hypervisor so you need to enable **CPU visualization** in the BIOS settings </br> (see Docker Toolbox tutorial)</br>
 For Windows 7 install the offical Docker Toolbox:
 https://docs.docker.com/toolbox/toolbox_install_windows/
 
@@ -46,16 +46,28 @@ https://gitforwindows.org/
 **1.** First, navigate with the commandline to the directory where the project should be installed.<br />
 Execute:<br />
 `git clone <url>`<br />
-after the sownlode is complete navigate in the project directory:<br />
-`cd vm --------`<br />
+after the download is complete navigate in the project directory:<br />
+`cd vm-docker-bootstrap`<br />
 now you can start 
 
 **2.** To install the subprojects execute the `install` script:<br />
 **Linux**:<br />
 `./install.sh`<br />
 **Windows:**<br />
+`install.bat`
 ### Option: 2. Without Git<br />
 This installation way is more complicated.<br />
+![Alt text](/vm-docker-compose-oracleGitLab.jpg?raw=true "vm-docker-bootstrap")
+You can download all projects available in the Git manuel as zip over the Web-Frontend. </br>
+
+**1.** Download and unzip the root project from this site.
+after the download is complete navigate in the project directory:<br />
+`cd vm-docker-bootstrap`<br />
+**2.** Download and unzip the subprojects in the root project:
+</br>
+http://usdev016:81/vm-dev/vmx-oc-web-test
+http://usdev016:81/vm-dev/vmx-oc-oracledb-test
+
 
 ## Run Valuemation
 Now the project can be started.<br />
