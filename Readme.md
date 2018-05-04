@@ -97,6 +97,35 @@ cd vm-docker-bootstrap
 
 _____________
 
+### Create a Persistent Datastore on Guest-System
+
+For the **persistent** storage of data, especially the data of the database, a `docker volume` is needed.
+```
+docker volume create --name=valuemation-datavolume
+
+```
+
+This **volume** can now store the data of the **actually stateless container**.
+<br />
+For more **detailed information** about the volume the following command can be used:
+```
+docker volume inspect valuemation-datavolume
+```
+
+Output Example:
+```
+[
+    {
+        "CreatedAt": "2018-05-04T18:05:57Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/mnt/sda1/var/lib/docker/volumes/valuemation-datavolume/_data",
+        "Name": "valuemation-datavolume",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+```
 ## Run Valuemation
 Now the project can be started.<br />
 For the first start and whenever changes are made to the subprojects the following command must be executed.<br />
