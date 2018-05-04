@@ -20,6 +20,16 @@ With `docker-compose` now a new system with variable `vmweb` folder and `databas
      
 
 ## Requirements
+needed Software:
+ - Docker
+ - Docker Compose
+
+
+Docker working with the guest-Os via a hypervisor so you need to enable **CPU visualization** in the BIOS settings </br> (see Docker Toolbox tutorial)</br>
+For Windows 7 install the offical Docker Toolbox:
+https://docs.docker.com/toolbox/toolbox_install_windows/
+
+
      
 ## Installation 
 
