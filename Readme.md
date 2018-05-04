@@ -27,8 +27,7 @@ needed Software:
 
 
 Docker working with the Guest-OS via a Hypervisor so you need to enable **CPU visualization** in the BIOS settings </br> (see Docker Toolbox tutorial)</br>
-For Windows 7 install the offical Docker Toolbox:
-https://docs.docker.com/toolbox/toolbox_install_windows/
+For Windows 7 install the offical [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/).
 
 
      
@@ -41,8 +40,8 @@ There are two ways to install the project.
 
 
 ### Option: 1. Git
-For this option you can Install the git bash for Winodws 7:
-https://gitforwindows.org/
+For this option you can Install the [git bash for Winodws 7](https://gitforwindows.org/).
+
 
 **1.** First, navigate with the commandline to the directory where the project should be installed.<br />
 **Execute**:<br />
@@ -57,7 +56,6 @@ cd vm-docker-bootstrap
 ```
 
 <br />
-now you can start 
 
 **2.** To install the subprojects **execute** the `install` script:<br />
 **Linux**:<br />
@@ -85,6 +83,7 @@ cd vm-docker-bootstrap
 **2.** **Download** and **unzip** the subprojects in the root project:
 
 [vm-oc-web-test](http://usdev016:81/vm-dev/vmx-oc-web-test)
+<br />
 [vm-oc-oracledb-test](http://usdev016:81/vm-dev/vmx-oc-oracledb-test)
 
 _____________
