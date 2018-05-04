@@ -32,13 +32,17 @@ For Windows 7 install the offical [Docker Toolbox](https://docs.docker.com/toolb
 
      
 ## Installation 
-
-
-
+The target structure should look like this.
+<br />
+```
+vm-docker-bootstrap
+               |-> vmx-oc-web-test
+                  - Dockerfile
+               |-> vmx-oc-oracledb-test
+                  - Dockerfile
+```
 There are two ways to install the project.
-
-
-
+<br />
 ### Option: 1. Git
 For this option you can Install the [git bash for Winodws 7](https://gitforwindows.org/).
 
@@ -83,9 +87,9 @@ cd vm-docker-bootstrap
 
 **2.** **Download** and **unzip** the subprojects in the root project:
 
-[vm-oc-web-test](http://usdev016:81/vm-dev/vmx-oc-web-test)
+[vmx-oc-web-test](http://usdev016:81/vm-dev/vmx-oc-web-test)
 <br />
-[vm-oc-oracledb-test](http://usdev016:81/vm-dev/vmx-oc-oracledb-test)
+[vmx-oc-oracledb-test](http://usdev016:81/vm-dev/vmx-oc-oracledb-test)
 
 _____________
 
@@ -95,9 +99,7 @@ For the first start and whenever changes are made to the subprojects the followi
 ```
 docker-compose up --build
 ```
-
-
-The command execute `docker-compose` the `docker-compose.yaml` configuration <br />
+The execute of `docker-compose` implement the `docker-compose.yaml` configuration <br />
 (must be run in the folder where the file is located.) <br />
 and the `--build` parameter determines that a docker build will run for the appropriate configuration. <br />
 
@@ -110,10 +112,10 @@ docker-compose up
 </br>
 </br>
 
-## Import varable `vmweb` and Oracle `Dump`
+## Import variable `vmweb` and Oracle `Dump`
 
 To use variable **Valuemation versions**, the **subprojects** of the **vmweb** folder and the dump **.dmp** have to be swapped out.
-**Note:** The **dump(*.dmp) file** must be named the same as the **Oracle user defined in the dump for importing the data**.
+**Note:** The **dump(*.dmp) file** must have the same name like from the **Oracle user defined in the dump for importing the data**.
 
 **After** the **exchange**, the subprojects have to be **rebuilt**. </br>
 For this, the following command must be executed again. </br>
@@ -121,13 +123,13 @@ For this, the following command must be executed again. </br>
 docker-compose up --build
 ```
 
-**Note:** The project is not allowed to run. (see Dealing with Docker Compose)</br>
+**Note:** The project isn´t allowed to run. (see Dealing with Docker Compose)</br>
 ## Dealing with Docker Compose
-To display all docker-compose instances: 
+To display all docker-compose instances:
 ```
 docker-compose ps
 ```
-To delete all instances: 
+To delete all instances:
 ```
 docker-compose rm
 ```
@@ -138,10 +140,12 @@ docker-compose logs
 
 ### Custemize Docker Compose Configuration
 
-It is for example possible if needed to change the port for the Websever Image on 80, if this is free.
+It is possible if needed to change the port for the Web Server Image on 80, if this is free.
+<br />
 Example:
 ```
 version:'2'
+
 ```
 
 
