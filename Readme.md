@@ -81,5 +81,16 @@ and the `--build` parameter determines that a docker build will run for the appr
 
 `docker-compose up` <br />
 Without this flag the existing containers are started (if existing).
+</br>
+</br>
+
+## Dealing with Docker Compose
+to display all docker-compse instances: 
+`docker-compose ps`</br>
+to delete all instances: 
+`docker-compose rm`</br>
+View all logs: 
+`docker-compose logs`</br>
+
 
 
