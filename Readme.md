@@ -5,8 +5,8 @@ Valuemation Docker Bootstrap
 * [Overview](#overview)
 * [Requirements](#requirements)
 * [Installation](#installation)
-    * [Option: 1. Git](#option-1.-git)
-    * [Option 2. Without Git](#option-2.-without-git)
+    * [Option: 1. Git](#option-1-git)
+    * [Option: 2. Without Git](#option-2-without-git)
 * [Run Valuemation](#run-valuemation)
 * [Dealing with Docker Compose](#dealing-with-docker-compose)
 
@@ -40,7 +40,7 @@ There are two ways to install the project.
 
 
 
-### Option 1. Git
+### Option: 1. Git
 For this option you can Install the git bash for Winodws 7:
 https://gitforwindows.org/
 
@@ -56,7 +56,7 @@ now you can start
 `./install.sh`<br />
 **Windows:**<br />
 `install.bat`
-### Option 2. Without Git<br />
+### Option: 2. Without Git<br />
 This installation way is more expensive.<br />
 You can download all projects available in the Git manuel as zip over the Web-Frontend. </br>
 ![Alt text](/vm-docker-compose-oracleGitLab.jpg?raw=true "vm-docker-bootstrap")
