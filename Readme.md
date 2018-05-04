@@ -22,8 +22,8 @@ With `docker-compose` now a new system with variable `vmweb` folder and `databas
 
 ## Requirements
 needed Software:
- - Docker
- - Docker Compose
+ - [ ] Docker
+ - [ ] Docker Compose
 
 
 Docker working with the Guest-OS via a Hypervisor so you need to enable **CPU visualization** in the BIOS settings </br> (see Docker Toolbox tutorial)</br>
@@ -64,11 +64,7 @@ now you can start
 ```sh
 ./install.sh
 ```
-
-<br />
 **Windows:**
-<br />
-
 ```
 install.bat
 ```
@@ -81,16 +77,16 @@ You can download all projects available in the Git manuel as zip over the Web-Fr
 ![Alt text](/vm-docker-compose-oracleGitLab.jpg?raw=true "vm-docker-bootstrap")
 
 **1.** **Download** and **unzip** the root project from this site.
-after the download is complete navigate in the project directory:<br />
+after the download is complete navigate in the project directory:
 ```
 cd vm-docker-bootstrap
 ```
-<br />
+
 **2.** **Download** and **unzip** the subprojects in the root project:
-</br>
-http://usdev016:81/vm-dev/vmx-oc-web-test
-</br>
-http://usdev016:81/vm-dev/vmx-oc-oracledb-test
+
+[vm-oc-web-test](http://usdev016:81/vm-dev/vmx-oc-web-test)
+[vm-oc-oracledb-test](http://usdev016:81/vm-dev/vmx-oc-oracledb-test)
+
 _____________
 
 ## Run Valuemation
@@ -99,7 +95,7 @@ For the first start and whenever changes are made to the subprojects the followi
 ```
 docker-compose up --build
 ```
-<br />
+
 
 The command execute `docker-compose` the `docker-compose.yaml` configuration <br />
 (must be run in the folder where the file is located.) <br />
@@ -108,7 +104,7 @@ and the `--build` parameter determines that a docker build will run for the appr
 ```
 docker-compose up
 ```
-<br />
+
 Without this flag the existing containers are started (if existing).
 </br>
 </br>
@@ -123,15 +119,21 @@ For this, the following command must be executed again. </br>
 ```
 docker-compose up --build
 ```
-<br />
+
 **Note:** The project is not allowed to run. (see Dealing with Docker Compose)</br>
 ## Dealing with Docker Compose
 to display all docker-compse instances: 
-`docker-compose ps`</br>
+```
+docker-compose ps
+```
 to delete all instances: 
-`docker-compose rm`</br>
+```
+docker-compose rm
+```
 View all logs: 
-`docker-compose logs`</br>
+```
+docker-compose logs
+```
 
 ### Custemize Docker Compose Configuration
 
