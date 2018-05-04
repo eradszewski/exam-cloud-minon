@@ -8,8 +8,8 @@ Valuemation Docker Bootstrap
     * [Option: 1. Git](#option-1-git)
     * [Option: 2. Without Git](#option-2-without-git)
 * [Run Valuemation](#run-valuemation)
+* [Import varable `vmweb` and Oracle `Dump`](#dealing-with-docker-compose)
 * [Dealing with Docker Compose](#dealing-with-docker-compose)
-
         
 ## Overview
 
@@ -46,7 +46,10 @@ https://gitforwindows.org/
 
 **1.** First, navigate with the commandline to the directory where the project should be installed.<br />
 **Execute**:<br />
-`git clone http://usdev016:81/vm-dev/vm-docker-bootstrap.git`<br />
+``
+git clone http://usdev016:81/vm-dev/vm-docker-bootstrap.git
+``
+<br />
 After the download is complete navigate in the project directory:<br />
 `cd vm-docker-bootstrap`<br />
 now you can start 
