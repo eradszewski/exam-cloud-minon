@@ -14,7 +14,7 @@ Valuemation Docker Bootstrap
 ## Overview
 
 The project will show the basic functionality of Docker in a Valuemation environment.
-It consists of two parts, a tomcat webserver image and an oracle database image.
+It consists of two parts, a tomcat web server image and an Oracle database image.
 With `docker-compose` now a new system with variable `vmweb` folder and `database dump (.dmp)` can be created.</br>
 ![Alt text](/vm-docker-bootstrap.png?raw=true "vm-docker-bootstrap")
                 
@@ -81,7 +81,7 @@ You can download all projects available in the Git manuel as zip over the Web-Fr
 **1.** **Download** and **unzip** the root project from this site.
 <br />
 After the download is complete navigate in the project directory:
-```
+```sh
 cd vm-docker-bootstrap
 ```
 
