@@ -6,7 +6,7 @@ Valuemation Docker Bootstrap
 * [Requirements](#requirements)
 * [Installation](#installation)
     * [Option: 1. Git](#option-1.-git)
-    * [Get geography metadata](#get-geography-metadata)
+    * [Option 2. Without Git](#option-2.-without-git)
 * [Run Valuemation](#run-valuemation)
 
         
@@ -45,7 +45,7 @@ https://gitforwindows.org/
 
 **1.** First, navigate with the commandline to the directory where the project should be installed.<br />
 Execute:<br />
-`git clone <url>`<br />
+`git clone http://usdev016:81/vm-dev/vm-docker-bootstrap.git`<br />
 after the download is complete navigate in the project directory:<br />
 `cd vm-docker-bootstrap`<br />
 now you can start 
@@ -55,7 +55,7 @@ now you can start
 `./install.sh`<br />
 **Windows:**<br />
 `install.bat`
-### Option: 2. Without Git<br />
+### Option 2. Without Git<br />
 This installation way is more expensive.<br />
 You can download all projects available in the Git manuel as zip over the Web-Frontend. </br>
 ![Alt text](/vm-docker-compose-oracleGitLab.jpg?raw=true "vm-docker-bootstrap")
