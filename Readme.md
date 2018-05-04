@@ -102,5 +102,11 @@ to delete all instances:
 View all logs: 
 `docker-compose logs`</br>
 
+### Custemize Docker Compose Configuration
+
+It is for example possible if needed to change the port for the Websever Image on 80, if this is free.
+Example:
+`version:'2'`
+
 
 
