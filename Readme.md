@@ -142,9 +142,24 @@ docker-compose logs
 
 It is possible if needed to change the port for the Web Server Image on 80, if this is free.
 <br />
-Example:
+Example docker-compose.yaml:
 ```
-version:'2'
+version: '2'
+services:
+...
+...
+...
+  valumation-web:
+    build:
+      context: ./vmx-oc-web-test/.
+#    image: vm-web:v1
+    ports:
+       - 80:8080
+    depends_on:
+      - valumation-oracle-db
+...
+...
+...
 
 ```
 
