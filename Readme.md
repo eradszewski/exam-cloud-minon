@@ -46,19 +46,35 @@ https://gitforwindows.org/
 
 **1.** First, navigate with the commandline to the directory where the project should be installed.<br />
 **Execute**:<br />
-``
+```sh
 git clone http://usdev016:81/vm-dev/vm-docker-bootstrap.git
-``
+```
 <br />
 After the download is complete navigate in the project directory:<br />
-`cd vm-docker-bootstrap`<br />
+
+```sh
+cd vm-docker-bootstrap
+```
+
+<br />
 now you can start 
 
 **2.** To install the subprojects **execute** the `install` script:<br />
 **Linux**:<br />
-`./install.sh`<br />
-**Windows:**<br />
-`install.bat`
+```sh
+./install.sh
+```
+
+<br />
+**Windows:**
+<br />
+
+```
+install.bat
+```
+
+_____________
+
 ### Option: 2. Without Git<br />
 This installation way is more expensive.<br />
 You can download all projects available in the Git manuel as zip over the Web-Frontend. </br>
@@ -66,24 +82,33 @@ You can download all projects available in the Git manuel as zip over the Web-Fr
 
 **1.** **Download** and **unzip** the root project from this site.
 after the download is complete navigate in the project directory:<br />
-`cd vm-docker-bootstrap`<br />
+```
+cd vm-docker-bootstrap
+```
+<br />
 **2.** **Download** and **unzip** the subprojects in the root project:
 </br>
 http://usdev016:81/vm-dev/vmx-oc-web-test
 </br>
 http://usdev016:81/vm-dev/vmx-oc-oracledb-test
-
+_____________
 
 ## Run Valuemation
 Now the project can be started.<br />
 For the first start and whenever changes are made to the subprojects the following command must be executed.<br />
-`docker-compose up --build`<br />
+```
+docker-compose up --build
+```
+<br />
 
 The command execute `docker-compose` the `docker-compose.yaml` configuration <br />
 (must be run in the folder where the file is located.) <br />
 and the `--build` parameter determines that a docker build will run for the appropriate configuration. <br />
 
-`docker-compose up` <br />
+```
+docker-compose up
+```
+<br />
 Without this flag the existing containers are started (if existing).
 </br>
 </br>
@@ -95,7 +120,10 @@ To use variable **Valuemation versions**, the **subprojects** of the **vmweb** f
 
 **After** the **exchange**, the subprojects have to be **rebuilt**. </br>
 For this, the following command must be executed again. </br>
-`docker-compose up --build`<br />
+```
+docker-compose up --build
+```
+<br />
 **Note:** The project is not allowed to run. (see Dealing with Docker Compose)</br>
 ## Dealing with Docker Compose
 to display all docker-compse instances: 
@@ -109,7 +137,9 @@ View all logs:
 
 It is for example possible if needed to change the port for the Websever Image on 80, if this is free.
 Example:
-`version:'2'`
+```
+version:'2'
+```
 
 
 
