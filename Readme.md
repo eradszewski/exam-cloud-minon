@@ -114,7 +114,7 @@ docker-compose up
 
 ## Import variable `vmweb` and Oracle `Dump`
 
-To use variable **Valuemation versions**, the **subprojects** of the **vmweb** folder and the dump **.dmp** have to be swapped out.
+To use variable **Valuemation versions**, the **subprojects** of the **vmweb** folder and the dump **(.dmp)** have to be swapped out.
 **Note:** The **dump(*.dmp) file** must have the same name like from the **Oracle user defined in the dump for importing the data**.
 
 **After** the **exchange**, the subprojects have to be **rebuilt**. </br>
