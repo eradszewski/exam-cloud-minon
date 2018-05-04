@@ -75,7 +75,8 @@ You can download all projects available in the Git manuel as zip over the Web-Fr
 ![Alt text](/vm-docker-compose-oracleGitLab.jpg?raw=true "vm-docker-bootstrap")
 
 **1.** **Download** and **unzip** the root project from this site.
-after the download is complete navigate in the project directory:
+<br />
+After the download is complete navigate in the project directory:
 ```
 cd vm-docker-bootstrap
 ```
@@ -100,11 +101,12 @@ The command execute `docker-compose` the `docker-compose.yaml` configuration <br
 (must be run in the folder where the file is located.) <br />
 and the `--build` parameter determines that a docker build will run for the appropriate configuration. <br />
 
+
+**Without** the `--build` flag the existing containers are started (if existing).
 ```
 docker-compose up
 ```
 
-Without this flag the existing containers are started (if existing).
 </br>
 </br>
 
@@ -121,11 +123,11 @@ docker-compose up --build
 
 **Note:** The project is not allowed to run. (see Dealing with Docker Compose)</br>
 ## Dealing with Docker Compose
-to display all docker-compse instances: 
+To display all docker-compose instances: 
 ```
 docker-compose ps
 ```
-to delete all instances: 
+To delete all instances: 
 ```
 docker-compose rm
 ```
