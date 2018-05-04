@@ -8,6 +8,7 @@ Valuemation Docker Bootstrap
     * [Option: 1. Git](#option-1.-git)
     * [Option 2. Without Git](#option-2.-without-git)
 * [Run Valuemation](#run-valuemation)
+* [Dealing with Docker Compose](#dealing-with-docker-compose)
 
         
 ## Overview
@@ -44,13 +45,13 @@ For this option you must Install the git bash for Winodws 7:
 https://gitforwindows.org/
 
 **1.** First, navigate with the commandline to the directory where the project should be installed.<br />
-Execute:<br />
+**Execute**:<br />
 `git clone http://usdev016:81/vm-dev/vm-docker-bootstrap.git`<br />
-after the download is complete navigate in the project directory:<br />
+After the download is complete navigate in the project directory:<br />
 `cd vm-docker-bootstrap`<br />
 now you can start 
 
-**2.** To install the subprojects execute the `install` script:<br />
+**2.** To install the subprojects **execute** the `install` script:<br />
 **Linux**:<br />
 `./install.sh`<br />
 **Windows:**<br />
@@ -60,10 +61,10 @@ This installation way is more expensive.<br />
 You can download all projects available in the Git manuel as zip over the Web-Frontend. </br>
 ![Alt text](/vm-docker-compose-oracleGitLab.jpg?raw=true "vm-docker-bootstrap")
 
-**1.** Download and unzip the root project from this site.
+**1.** **Download** and **unzip** the root project from this site.
 after the download is complete navigate in the project directory:<br />
 `cd vm-docker-bootstrap`<br />
-**2.** Download and unzip the subprojects in the root project:
+**2.** **Download** and **unzip** the subprojects in the root project:
 </br>
 http://usdev016:81/vm-dev/vmx-oc-web-test
 </br>
@@ -84,6 +85,15 @@ Without this flag the existing containers are started (if existing).
 </br>
 </br>
 
+## Import varable `vmweb` and Oracle `Dump`
+
+To use variable **Valuemation versions**, the **subprojects** of the **vmweb** folder and the dump **.dmp** have to be swapped out.
+**Note:** The **dump(*.dmp) file** must be named the same as the **Oracle user defined in the dump for importing the data**.
+
+**After** the **exchange**, the subprojects have to be **rebuilt**. </br>
+For this, the following command must be executed again. </br>
+`docker-compose up --build`<br />
+**Note:** The project is not allowed to run. (see Dealing with Docker Compose)</br>
 ## Dealing with Docker Compose
 to display all docker-compse instances: 
 `docker-compose ps`</br>
