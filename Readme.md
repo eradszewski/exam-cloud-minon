@@ -46,8 +46,11 @@ There are two ways to install the project.
 <br />
 ### Option: 1. Git
 For this option you can Install the [git bash for Winodws 7](https://gitforwindows.org/).
-
-
+<br />
+**Note:** the switch from Unix to Windwos can generate a CRLF Bug execute the follow command on cmd
+```
+git config --global core.autocrlf false
+```
 **1.** First, navigate with the commandline to the directory where the project should be installed.<br />
 **Execute**:<br />
 ```sh
@@ -126,6 +129,12 @@ Output Example:
     }
 ]
 ```
+
+To clear the Volume / the persistent Oracle Dump to install a new Dump use :
+```
+docker volume prune valuemation-datavolume --force
+```
+
 ## Run Valuemation
 Now the project can be started.<br />
 For the first start and whenever changes are made to the subprojects the following command must be executed.<br />
