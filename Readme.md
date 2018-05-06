@@ -31,7 +31,7 @@ Docker working with the Guest-OS via a Hypervisor so you need to enable **CPU vi
 For Windows 7 install the offical [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/).
 <br />
 **Node:** 
-For optimal operation, the VM in the docker needs to be provided with slightly more resources. Depending on how strong your machine is I would recommend 2GB - 4GB RAM, 1 - 4 CPUs.
+For optimal operation, the VM in the docker needs to be provided with slightly more resources. Depending on how strong your machine is I would recommend **2GB - 4GB RAM, 1 - 4 CPUs**.
 
 <p align="center">
   <img src="/virtualbox_change.jpg">
@@ -146,6 +146,17 @@ docker volume prune valuemation-datavolume --force
 ```
 
 ## Run Valuemation
+
+**Only for Windwos 7:**
+start the **docker toolbox**.
+Since Docker does not run directly on the Windows 7 device, the IP of the Vm is required, this must be entered in the "dbpropertys" so that "Valuemation-Web" can open the connection.
+The Docker-VM Ip you see in the Docker Toolbox
+<p align="center">
+  <img src="/IP_Toolbox.jpg">
+</p> 
+
+____________________
+For **all Systems:**
 Now the project can be started.<br />
 For the first start and whenever changes are made to the subprojects the following command must be executed.<br />
 ```
