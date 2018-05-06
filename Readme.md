@@ -148,8 +148,9 @@ docker volume prune valuemation-datavolume --force
 ## Run Valuemation
 
 **Only for Windwos 7:**
+<br />
 start the **docker toolbox**.
-Since Docker does not run directly on the Windows 7 device, the IP of the Vm is required, this must be entered in the "dbpropertys" so that "Valuemation-Web" can open the connection.
+Since Docker does **not run directly on the Windows 7 device**, the IP of the VM is required, this must be entered in the **dbconfig.properties** so that **Valuemation-Web** can open the connection.
 The Docker-VM Ip you see in the Docker Toolbox
 <p align="center">
   <img src="/IP_Toolbox.jpg">
